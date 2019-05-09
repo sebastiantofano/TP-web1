@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    
+
+}
+.header{
+    width: 100%;
+    height: 100px;
+    padding: 1em 2em;
+    background-color: #80403C;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    border: 1px solid white;
+    border-radius: 10%;
+    padding: 1em 3em;
+    color: white;
+}
+#ticket{
+    font-size: 3em;
+    color: white;
+}
+#buscador{
+    position: relative;
+}
+#caja-buscador{
+    padding: .5em 1em;
+    padding-right: 2em;
+    min-width: 200px;
+
+}
+#icono-lupa{
+    position: absolute;
+    top: .5em;
+    right: .5em;
+}
+
+
+.menu{
+    background-color: #FF392B;
+    list-style: none;
+    display: flex;
+}
+.menu li{
+    flex: auto;
+    border-right: 1px solid black;
+    text-align: center;
+}
+.menu li:nth-last-of-type(1){
+    border-right: none;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    line-height: 3;
+}
