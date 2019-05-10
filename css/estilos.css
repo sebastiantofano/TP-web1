@@ -84,3 +84,122 @@
     height: 50px;
     padding: 1em;
 }
+
+
+/*INICIO AGREGADO JAVIER*/
+footer{
+    padding: 15px 5%;
+    width: 100%;
+    background-color: #707070;
+}
+footer section{
+    width: 100%;
+}
+footer article{
+    width: 33%;
+    margin: 2px;
+    float: left;
+    background-color: #707070;
+}
+footer a{
+    padding: 15px; 
+    text-decoration: none;
+    color: white;
+}
+ul{ 
+    padding: 15px;
+    list-style: none;
+}   
+/*FIN AGREGADO JAVIER*/
+.flex-container{
+    display: flex;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    padding: 1em 2em;
+    background-color: #80403C;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    border: 1px solid white;
+    border-radius: 10%;
+    padding: 1em 3em;
+    color: white;
+}
+#ticket{
+    font-size: 3em;
+    color: white;
+}
+#buscador{
+    position: relative;
+}
+#caja-buscador{
+    padding: .5em 1em;
+    padding-right: 2em;
+    min-width: 200px;
+
+}
+#icono-lupa{
+    position: absolute;
+    top: .5em;
+    right: .5em;
+}
+.menu{
+    background-color: #FF392B;
+    list-style: none;
+    display: flex;
+}
+.menu li{
+    flex: auto;
+    border-right: 1px solid black;
+    text-align: center;
+}
+.menu li:nth-last-of-type(1){
+    border-right: none;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    line-height: 3;
+}
+
+/*INICIO AGREGADO JAVIER*/
+.formulario{
+    padding: 30px 10%;
+}
+.formulario article{
+    float: left;    
+    width: 50%;
+}
+.formulario li{
+    padding: 5px 15px;    
+}
+.formulario input,textarea{
+    padding: 5px;
+    width: 90%;
+    border-radius: 5%;
+    font-family: arial;
+}
+.datos-contacto{
+    padding: 15px;
+    border: solid 2px #f0f0f0;
+    height: 350px;
+}
+.clear{
+    clear: both;
+}
+.ubicacion{
+    padding: 50px 20%;
+    width: 100%;
+    text-align: center;
+}
+.ubicacion img{
+    padding: 15px;
+    border: solid 2px #f0f0f0;
+}
+.redes{
+    text-align: right;
+}
+/*FIN AGREGADO JAVIER*/
