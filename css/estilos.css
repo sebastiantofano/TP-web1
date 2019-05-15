@@ -10,9 +10,19 @@ body{
 }
 a{
     text-decoration: none;
+    color: white;
+}
+.btn{
+    border: 0;
+    border-radius: 5px;
+    padding: 2px 8px;
+    cursor: pointer;
 }
 /* FLEXBOX */
 .flex-container{
+    display: flex;
+}
+.fila{
     display: flex;
 }
 
@@ -50,12 +60,30 @@ a{
     width: 75px;
     height: 75px;
 }
-#clapboard:hover{
+.contenedor-ticket:hover #clapboard{
     transform: rotate(5deg);
+}
+.contenedor-ticket:hover .notificacion{
+    top: -20px;
+}
+.contenedor-ticket{
+    position: relative;
 }
 #ticket{
     width: 100%;
     color: white;
+}
+.contenedor-ticket .notificacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: red;
 }
 #buscador{
     position: relative;
@@ -73,6 +101,7 @@ a{
     top: 7px;
     right: 8px;
 }
+
 
 
 .menu{
@@ -181,7 +210,86 @@ a{
     -moz-transition: all 1s ease;
 }
 
+/* MAIN */
 
+/* SLIDER */
+
+
+.slider {
+    background-image: url("https://picsum.photos/800/300"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 300px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    box-shadow: 0 10px 10px -10px #000; 
+  }
+
+/* PASOS */
+
+.pasos{
+    display: flex;
+    
+    justify-content: space-around;
+}
+.pasos article{
+    flex: 0 0 300px;
+    background-color: #CCC;
+    margin: 1.5em 0 ;
+}
+
+/* EVENTOS */
+
+.eventos {
+    display: flex;
+    justify-content: space-around;
+}
+.eventos h3{
+    width: 100%;
+}
+
+.eventos article{
+    flex: 0 0 300px;
+    background-color: #CCC;
+    margin: 1.5em 0 ;
+}
+
+.caja-evento{
+    border: 1px solid black;
+    padding: 1em;
+}
+.foto-evento{
+    background-image: url("https://picsum.photos/250/250"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 250px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.info-evento{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MEDIOS DE PAGO */
+
+
+.medios-pago h3{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.contenedor-tarjetas{
+    display: flex;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 1em auto;
+}
+.tarjetas{
+    flex: 0 0 150px;
+    height: 100px;
+    background-color: blanchedalmond;
+}
 
 
 /* .menu a::after{
