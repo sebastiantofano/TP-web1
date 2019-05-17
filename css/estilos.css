@@ -24,8 +24,8 @@ a{
     color: #FFF;
 }
 .btn-comprar:hover{
-    background-color: #85BAFF;
-    color: #405B80;
+    background-color: #FFF;
+    color: #000;
 }
 
 /* FLEXBOX */
@@ -66,15 +66,15 @@ a{
     color: white;
     
 }
-#clapboard{
+/* #clapboard{
     width: 75px;
     height: 75px;
 }
 .contenedor-ticket:hover #clapboard{
     transform: rotate(5deg);
-}
+} */
 .contenedor-ticket:hover .notificacion{
-    top: -20px;
+    top: -10px;
 }
 .contenedor-ticket{
     position: relative;
@@ -82,19 +82,30 @@ a{
 #ticket{
     width: 100%;
     color: white;
+    position: relative;
+}
+#ticket img{
+    position: relative;
+}
+#ticket img:hover{
+    position: relative;
+    transform: rotate(-10deg);
 }
 .contenedor-ticket .notificacion{
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: -10px;
-    left: -10px;
+    top: 0px;
+    right: 0px;
     width: 30px;
     height: 30px;
     border-radius: 100%;
     background-color: red;
+    box-shadow: 0 0 0 2px #000;
+    font-weight: bold;
 }
+
 #buscador{
     position: relative;
 }
