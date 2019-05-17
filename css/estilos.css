@@ -419,3 +419,47 @@ footer a{
     text-align: right;
 }
 /*FIN AGREGADO JAVIER*/
+
+/* FORMULARIO INSCRIPCION */
+    #formulario-inscripcion-evento{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+
+
+    #formulario-inscripcion-evento input{
+        border: 0;
+        border-radius: 5px;
+        margin: 10px 5px;
+        padding: 5px 10px;
+
+        height: 25px;
+    }
+    #formulario-inscripcion-evento h3{
+        display: inline;
+    }
+
+    #formulario-inscripcion-evento .left{
+        align-self: flex-start;
+    }
+
+    #total-inscripcion-evento{
+        width: 100px
+    }
+
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+header,main,footer{
+    width: 100%;
+}
+footer{
+    align-self: flex-end;
+}
