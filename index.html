@@ -11,14 +11,14 @@
 </head>
 <body>
     <header>
-            <section class="flex-container header">
+            <section class="flex-container" id="header">
                 <div class="flex-item">
                     <div class="logo">
                         <a href="#index.html">Logo</a> 
                     </div>
                 </div>
-                <div class="flex-item">
-                    <div id="buscador">
+                <div class="flex-item" id="buscador">
+                    
                         <form action="">
                             <input id="caja-buscador" list="data" type="text" placeholder="Busqueda..."/>
                             <datalist id="data">
@@ -33,7 +33,7 @@
                         </form>
                         
                         
-                    </div>
+                    
                 </div>
                 <div class="flex-item">
                     <div class="contenedor-ticket">
@@ -52,42 +52,42 @@
     
                 
             </section>
-            <section>
+            <!-- <section> -->
                 <nav class="nav">
                     <ul class="menu">
                         <li>
                             <i class="far fa-edit ">
-                                <p>Para más beneficios</p>
+                                <!-- <p>Para más beneficios</p> -->
                             </i>
                             <a href="#">Inscripción</a>
                         </li>
                         <li>
                             <i class="far fa-hand-point-right ">
-                                <p>A quien quieras</p> 
+                                <!-- <p>A quien quieras</p>  -->
                             </i>
                             <a href="#">Invitación</a>
                         </li>
                         <li>
                             <i class="far fa-check-circle "> 
-                                <p>Todas tus operaciones</p>
+                                <!-- <p>Todas tus operaciones</p> -->
                             </i>
                             <a href="#">Resumen</a>
                         </li>
                         <li>
                             <i class="far fa-calendar-alt "> 
-                                <p>Chequeá el calendario</p>
+                                <!-- <p>Chequeá el calendario</p> -->
                             </i>
                             <a href="#">Evento</a>
                         </li>
                         <li>
                             <i class="far fa-envelope">
-                                <p>Escribinos</p>
+                                <!-- <p>Escribinos</p> -->
                             </i>
                             <a href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </nav>
-            </section>
+            <!-- </section> -->
         
     </header>
     <main>
@@ -197,7 +197,7 @@
         </section>
 
         <footer>
-            <section class="flex-container footer">
+            <section class="footer">
                 <div class="flex-item  col-4 col-footer">
                         <h3>Integrantes del grupo</h3>
                     <div class="flex-container datos-grupos ">
@@ -214,22 +214,28 @@
                     <div class="flex-container menu-inferior">
                             
                             <ul>
-                                <li><a href="#">Inscripción</a></li>
-                                <li><a href="#">Invitación</a></li>
-                                <li><a href="#">Resumen</a></li>
-                                <li><a href="#">Evento</a></li>
-                                <li><a href="#">Contacto</a></li>
-                            </ul>         
+                                <li><a href="#"><i class="far fa-edit "></i>Inscripción</a></li>
+                                <li><a href="#"><i class="far fa-hand-point-right "></i>Invitación</a></li>
+                                <li><a href="#"><i class="far fa-check-circle "></i>Resumen</a></li>
+                                <li><a href="#"><i class="far fa-calendar-alt "></i>Evento</a></li>
+                                <li><a href="#"><i class="far fa-envelope"></i>Contacto</a></li>
+                            </ul>      
+                            
+                                   
+                                     
+                                     
+                                       
                     </div>
                 </div>
                 <div class="flex-item  col-4 col-footer">
                     <h3>Redes Sociales</h3>
-                    <div class="flex-container redes ">
+                    <div class=" redes ">
                         <a href="#" target="_blank">
                             <i class="fab fa-facebook"></i>
                         </a>
                         <a href="#" target="_blank">
                             <i class="fab fa-instagram"></i>
+
                         </a>
                         <a href="#" target="_blank">
                             <i class="fab fa-youtube"></i>
