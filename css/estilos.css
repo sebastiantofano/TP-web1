@@ -15,9 +15,19 @@ a{
 .btn{
     border: 0;
     border-radius: 5px;
-    padding: 2px 8px;
+    padding: 10px 10px;
+    
     cursor: pointer;
 }
+.btn-comprar{
+    background-color: #405B80;
+    color: #FFF;
+}
+.btn-comprar:hover{
+    background-color: #85BAFF;
+    color: #405B80;
+}
+
 /* FLEXBOX */
 .flex-container{
     display: flex;
@@ -240,37 +250,59 @@ a{
 
 /* EVENTOS */
 
-.eventos {
-    display: flex;
-    justify-content: space-around;
-}
-.eventos h3{
-    width: 100%;
-}
+    .eventos {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .eventos h3{
+        width: 100%;
+        font-size: 2em;
+        color: #000;
+        letter-spacing: .2em;
+    }
 
-.eventos article{
-    flex: 0 0 300px;
-    background-color: #CCC;
-    margin: 1.5em 0 ;
-}
+    .eventos article{
+        flex: 0 0 300px;
+        background-color: #85BAFF;
+        margin: 1.5em 0 ;
+    }
 
-.caja-evento{
-    border: 1px solid black;
-    padding: 1em;
-}
-.foto-evento{
-    background-image: url("https://picsum.photos/250/250"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 250px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
-.info-evento{
-    display: flex;
-    justify-content: space-between;
-}
-
+    .caja-evento{
+        border: 1px solid black;
+        padding: 1em;
+    }
+    .foto-evento{
+        background-image: url("https://picsum.photos/250/250"); /* The image used */
+        background-color: #cccccc; /* Used if the image is unavailable */
+        height: 250px; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+    }
+    .info-evento{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+    }
+    .fecha-evento{
+        font-size: 2em;
+        text-align: center;
+    }
+    .nombre-evento{
+        font-size: 1.3em;
+    }
+    .detalles-evento{
+        margin-top: 2px;
+        font-size: .8em;
+        text-align: end;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+    }
+    .comprar .btn-comprar{
+        width: 100%;
+        margin-top: 5px;
+    }
 /* MEDIOS DE PAGO */
 
 
@@ -278,15 +310,19 @@ a{
     display: block;
     width: 100%;
     text-align: center;
+    font-size: 2em;
+    letter-spacing: .2em;
 }
 .contenedor-tarjetas{
     display: flex;
-    justify-content: space-around;
-    max-width: 80%;
-    margin: 1em auto;
+    justify-content: center;
+    max-width: 100%;
+    /* margin: 1em; */
 }
 .tarjetas{
     flex: 0 0 150px;
+    
+    margin: 1em 1em;
     height: 100px;
     background-color: blanchedalmond;
 }
