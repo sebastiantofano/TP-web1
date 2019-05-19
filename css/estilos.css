@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('../fonts/stylesheet.css');
 :root {
     --color-primary: #FF0101;
     --color-secondary: #CC0000;
@@ -18,7 +19,7 @@
     --color-link: #FFF;
 
 
-    --font-title: ;
+    --font-title: 'american_captainregular';
     --font-text: 'Montserrat';
     --font-button: ;
 }
@@ -31,6 +32,9 @@
 /* Generales */
 body{
     background-color: var(--color-background);
+}
+.medios-pago h3, .eventos h3{
+    font-family: var(--font-title);
 }
 a{
     text-decoration: none;
