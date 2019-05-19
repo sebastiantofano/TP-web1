@@ -8,18 +8,19 @@
     --color-header: #802626;
     --color-nav: #00000045;
     --color-footer: #3a0909;
+    --color--footer-text: #bd4b4b;
     --color-pasos: #00000021;
-    --color-caja-evento: #ffffff59;
+    --color-caja-evento: #ffffff1f;
     --color-font: #FFF;
     --color-border:#802626;
     --color-title: #FFF;
-    --color-button:#FF4D4D;
+    --color-button:#af2a32;
     --color-button-hover: #FFF;
     --color-details: #FFF;
     --color-link: #FFF;
+    --color-title: #3a0909;
 
-
-    --font-title: 'american_captainregular';
+    --font-title: '';
     --font-text: 'Montserrat';
     --font-button: ;
 }
@@ -35,6 +36,9 @@ body{
 }
 .medios-pago h3, .eventos h3{
     font-family: var(--font-title);
+    text-transform: uppercase;
+    background-color: #ffffff14;
+    color: var(--color-title);
 }
 a{
     text-decoration: none;
@@ -244,8 +248,8 @@ a{
     -moz-transition: top 1s ease, color 1s ease;
 }
 .menu li:hover i{
-    top:58%;
-    color: #405B80;
+    top:120%;
+    color: var(--color-secondary);
     opacity: 1;
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
@@ -297,7 +301,7 @@ a{
     .eventos h3{
         width: 100%;
         font-size: 2em;
-        color: #000;
+
         letter-spacing: .2em;
     }
 
@@ -308,7 +312,8 @@ a{
     }
 
     .caja-evento{
-        border: 1px solid black;
+        border: 1px solid white;
+        box-shadow: 0 0 0 2px #4a0606;
         background-color: var(--color-caja-evento);
         padding: 1em;
     }
@@ -421,6 +426,7 @@ a{
     text-align: start;
     font-size: 1.2em;
     margin: .2em 0;
+    color: var(--color--footer-text);
 }
 
 .menu-inferior ul{
@@ -431,7 +437,7 @@ a{
 .menu-inferior ul li a{
     display: block;
     margin: .5em 0;
-    color: #000;
+    color: var(--color--footer-text);
 }
 .menu-inferior ul li a i{
     margin-right: .5em;
