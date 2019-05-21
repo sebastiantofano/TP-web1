@@ -4,13 +4,14 @@
 :root {
     --color-primary: #FF0101;
     --color-secondary: #CC0000;
-    --color-background: #802626;
+    --color-transparencia: #ffffff2e;
+    --color-background: #171314;
     --color-header: #802626;
     --color-nav: #00000045;
     --color-footer: #3a0909;
     --color--footer-text: #bd4b4b;
     --color-pasos: #00000021;
-    --color-caja-evento: #ffffff1f;
+    --color-caja-evento: #ffffff63;
     --color-font: #FFF;
     --color-border:#802626;
     --color-title: #FFF;
@@ -18,7 +19,7 @@
     --color-button-hover: #FFF;
     --color-details: #FFF;
     --color-link: #FFF;
-    --color-title: #3a0909;
+    /* --color-title: #3a0909; */
 
     --font-title: '';
     --font-text: 'Montserrat';
@@ -101,6 +102,8 @@ a{
     /* height: 100%; */
     padding: 2em 3em;
     background-color: var(--color-header);
+    background-image: url('../img/header7.jpg');
+    background-size: cover;
     justify-content: space-between;
     align-items: center;
 }
@@ -114,39 +117,33 @@ a{
     
 }
 
-/* #clapboard{
-    width: 75px;
-    height: 75px;
-}
-.contenedor-ticket:hover #clapboard{
-    transform: rotate(5deg);
-} */
-.contenedor-ticket:hover .notificacion{
+
+.contenedor-icono:hover .notificacion{
     top: -10px;
 }
-.contenedor-ticket{
+
+.contenedor-icono{
     position: relative;
 }
-#ticket{
-
+#icono{
     color: white;
     position: relative;
 }
-#ticket img{
+#icono img{
     position: relative;
     width: 100px;
     height: 100px;
 }
-#ticket img:hover{
+#icono img:hover{
     position: relative;
     transform: rotate(-10deg);
 }
-.contenedor-ticket .notificacion{
+.contenedor-icono .notificacion{
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 0px;
+    top: -5px;
     right: 0px;
     width: 30px;
     height: 30px;
@@ -184,53 +181,37 @@ a{
     box-shadow: 0px 6px 7px 0px rgba(0,0,0,0.30);
     list-style: none;
     padding: 0;
+
     
 }
 .menu li{
-    /* flex-grow: 1 flex-shrink: 1 flex-basis: 0 */
-    /* flex: 1 1 0;  */
     width: 100%;
-    /* padding: 1em; */
-    /* border-right: 1px solid black; */
     text-align: center;
     position: relative;
-    cursor: pointer;
-    height: 40px;
+    padding: .3em 0;
 }
-/* .menu li:nth-last-of-type(1){
-    border-right: none;
-} */
-.menu li:hover{
-    /* background-color: #6B7582; */
-}
+
 .menu li:hover a{
     color: white;
 }
-
 .menu li::after{
     content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 0;
     display: block;
-    height: 30px;
+    position: absolute;
+    bottom: 0;
     width: 100%;
     background-color: white;
-   
-    border-top: 3px solid rgba(87, 87, 87, 0.466);
-    transform: scale(1,0);
-    transform-origin: bottom;
-    transition: transform .7s ease;
+    height: 1px;
+    transform: scale(0,1);
 }
 .menu li:hover::after{
     transform: scale(1,1);
-    transform-origin: bottom;
-    transition: transform .7s ease;
-    
+    transition: transform .8s ease;
 }
+
 .menu a{
     font-size: 1.3em;
-    display: block;
+    /* display: block; */
     text-decoration: none;
     color: var(--color-link);
     z-index: 10;
@@ -239,47 +220,10 @@ a{
 
 .menu li{
     position: relative;
-    height: 60px;
-}
-.menu li i{
-    display: block;
-    font-size: 1.1em;
-    opacity: 0;
-    -webkit-transition: opacity 1s ease;
-    -moz-transition: opacity 1s ease;
-    transition: opacity 1s ease;
-}
-.menu li > i{
-    font-size: 1.3em;
-}
-.menu li i p{
-    display: inline-block;
 
 }
-.menu li i,.menu li a{
-    position: absolute;
-    width: 100%;
-    top : 30%;
-    z-index: 10;
-    transition: top 1s ease, color 1s ease;
-    -webkit-transition: top 1s ease, color 1s ease;
-    -moz-transition: top 1s ease, color 1s ease;
-}
-.menu li:hover i{
-    top:120%;
-    color: var(--color-secondary);
-    opacity: 1;
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-}
-.menu li:hover a{
-    top:7%;
-    color: white;
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-}
+
+
 
 /* MAIN */
 
@@ -305,9 +249,11 @@ a{
 }
 .pasos article{
     flex: 0 0 300px;
-    background-color: var(--color-pasos);
+    background-color: var(--color-transparencia);
     margin: 1.5em 0 ;
     color: var(--color-font);
+    border-radius: 5px;
+    padding: .5em;
 }
 
 /* EVENTOS */
@@ -329,18 +275,53 @@ a{
     }
 
     .caja-evento{
-        border: 1px solid white;
-        box-shadow: 0 0 0 2px #4a0606;
+        border: 1px solid #000;
+        box-shadow: 0 0 0 2px #FFF;
         background-color: var(--color-caja-evento);
         padding: 1em;
     }
+    
+    
+    .icono-detalles{
+        text-align: center;
+        color: white;
+        font-size: 2em;
+    }
     .foto-evento{
-        background-image: url("https://picsum.photos/250/250"); /* The image used */
-        background-color: #cccccc; /* Used if the image is unavailable */
-        height: 250px; /* You must set a specified height */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover; /* Resize the background image to cover the entire container */
+        overflow: hidden;
+        position: relative;
+        /* background-image: url("https://picsum.photos/250/250");
+        background-color: #cccccc; 
+        height: 250px;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;  */
+    }
+    .foto-evento img{
+        max-width: 100%;
+        vertical-align: middle;
+        transform: scale(1);
+        transition: transform .5s ease;
+    }
+    .foto-evento:hover img{
+        transform: scale(1.1);
+        transition: transform .5s ease;
+    }
+    .efecto-hover{
+        position: absolute;
+        z-index: 10;
+        bottom: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.70);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: bottom .5s ease;
+    }
+    .foto-evento:hover .efecto-hover{
+        bottom: 0;
+        transition: bottom  .5s ease;
     }
     .info-evento{
         display: flex;
@@ -359,6 +340,7 @@ a{
     }
     .detalles-evento{
         margin-top: 2px;
+        margin-bottom: 2px;
         font-size: .8em;
         text-align: end;
         cursor: pointer;
@@ -606,6 +588,9 @@ footer a{
 
 
 body{
+    /* background-image: url('../img/body.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  */
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
