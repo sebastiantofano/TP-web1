@@ -571,13 +571,48 @@ footer a{
         border-radius: 5px;
         margin: 10px 5px;
         padding: 5px 10px;
-
+        width: 100%;
         height: 25px;
     }
-    #formulario-inscripcion-evento h3{
-        display: inline;
+    #formulario-inscripcion-evento article{
+        display: flex;
+        align-items: center;
     }
+    #formulario-inscripcion-evento h3,#formulario-inscripcion-evento h2{
+        display: inline;
+        color: var(--color-title);
+    }
+    #formulario-inscripcion-evento h2{
+        display: block;
+        width: 100%;
+        margin-top: .5em;
+        margin-bottom: 1em;
+        border-bottom: 2px solid white;
+    }
+    .contenedor-datos-formulario{
+        width: 100%;
 
+
+    }
+    .btn-add{
+        border: 0;
+        border-radius: 100%;
+        padding: .4em;
+        margin-right: 1em;
+        background-color: #FFF;
+    }
+    .fa-plus{
+        color: green;
+        font-size: 1.5em;
+    }
+    .fa-minus-circle{
+        color: red;
+        font-size: 1.5em;
+    }
+    /* #formulario-inscripcion-evento i{
+        font-size: 1.5em;
+        color: red;
+    } */
     #formulario-inscripcion-evento .left{
         align-self: flex-start;
     }
@@ -602,6 +637,11 @@ footer{
     align-self: flex-end;
 }
 
+
+/* FORMULARIO INSCRIPCION */
+
+
+/* RESPONSIVE */
 @media screen and (max-width: 750px){
     /* HEADER */
         #header{
