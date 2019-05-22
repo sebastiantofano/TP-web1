@@ -21,7 +21,7 @@
     --color-link: #FFF;
     /* --color-title: #3a0909; */
 
-    --font-title: '';
+    --font-title: 'wensley';
     --font-text: 'Montserrat';
     --font-button: ;
 }
@@ -299,6 +299,7 @@ a{
     }
     .foto-evento img{
         max-width: 100%;
+        height: 250px;
         vertical-align: middle;
         transform: scale(1);
         transition: transform .5s ease;
@@ -345,6 +346,9 @@ a{
         text-align: end;
         cursor: pointer;
         color: rgb(255, 255, 255);
+    }
+    .detalles-evento:hover{
+        color: var(--color-button);
     }
     .comprar .btn-comprar{
         width: 100%;
@@ -405,15 +409,17 @@ a{
 /* Footer */
 .footer{
     display: flex;
+    
     /* flex-wrap: wrap; */
-    align-content: stretch;
-    background-color: var(--color-footer);
+    /* align-content: stretch; */
+    /* background-color: var(--color-footer); */
+    background-color: rgba(0, 0, 0, 0.137);
 }
 .footer ul{
     list-style: none;
 }
 .col-footer{
-    /* background-color: rgb(184, 214, 253); */
+    flex: 1; /*flex-grow:1*/
     border-radius: 5px;
     margin: 5px 10px;
     /* text-align: center; */
@@ -446,8 +452,11 @@ a{
     /* background-color: #85BAFF; */
     border-radius: 5px;
 }
+.menu-inferior ul li a:hover{
+    transform: translate(5px);
+}
 .menu-inferior ul li a{
-    display: block;
+    display: inline-block;
     margin: .5em 0;
     color: var(--color--footer-text);
 }
@@ -475,13 +484,17 @@ a{
     
 }
 
-.fa-facebook{
+.fa-facebook, .fa-instagram, .fa-youtube  {
+    color: #CCC;
+}
+
+.fa-facebook:hover{
     color: #4267B2;
 }
-.fa-instagram{
+.fa-instagram:hover{
     color: #D72370;
 }
-.fa-youtube{
+.fa-youtube:hover{
     color: #FF0000;
 }
 
@@ -650,6 +663,7 @@ footer{
         }
         #buscador{
             order: 3;
+            margin: 0 auto;
             margin-top: 1em;
         }
         .menu li i{
