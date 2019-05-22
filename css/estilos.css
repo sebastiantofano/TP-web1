@@ -8,7 +8,7 @@
     --color-background: #171314;
     --color-header: #802626;
     --color-nav: #00000045;
-    --color-footer: #3a0909;
+    --color-footer: rgb(17, 14, 15);
     --color--footer-text: #bd4b4b;
     --color-pasos: #00000021;
     --color-caja-evento: #ffffff63;
@@ -413,7 +413,7 @@ a{
     /* flex-wrap: wrap; */
     /* align-content: stretch; */
     /* background-color: var(--color-footer); */
-    background-color: rgba(0, 0, 0, 0.137);
+    background-color: var(--color-footer);
 }
 .footer ul{
     list-style: none;
@@ -430,14 +430,13 @@ a{
     font-size: 1.5em;
     padding-bottom: .2em;
     color: #FFF;
-    background-color: var(--color-footer);
+
 }
 .datos-grupos, .menu-inferior, .redes{
     padding: 0 .5em;
 }
 .datos-grupos ul{
     width: 100%;
-    /* background-color: #85BAFF; */
     border-radius: 5px;
 }
 .datos-grupos li{
