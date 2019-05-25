@@ -492,7 +492,7 @@ a{
 }
 
 .fa-facebook, .fa-instagram, .fa-youtube  {
-    color: #CCC;
+    color: #DDD;
 }
 
 .fa-facebook:hover{
@@ -669,9 +669,17 @@ footer{
     display: flex;
     color: white;
     justify-content: center;
+    max-width: 57em;
+    /* background-color: rgba(255, 255, 255, 0.05); */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255,0.1);
+    border-radius: 2%;
+    box-shadow: 0 0 0 .3em rgba(255, 255, 255, 0.425);
 }
 #section-personalizacion article{
     margin: 0 2em;
+    padding: 1em 0;
     flex-basis: 18em;
     flex-shrink: 0;
 }
@@ -684,23 +692,31 @@ footer{
     align-items: center;
     width: 100%;
     height: 300px;
-    background-color: #bd4b4b;
+    background-color: #000;
+    border-radius: .2em;
+    box-shadow: 0 0 0 .3em var(--color-button);
 }
 #previsualizacion-evento-titulo{
     font-family: var(--font-title);
 }
+#personalizacion-invitacion h2{
+    margin-bottom: 1em;
+}
+
+#section-personalizacion h4{
+    margin-top: .6em;
+    margin-bottom: .3em;
+}
+
 #previsualizacion-evento-fecha{
     position: absolute;
     right: 0;
     bottom: 0;
     margin-right: 1em;
     margin-bottom: 1em;
-
 }
 
-#personalizacion-invitacion h2{
-    margin-bottom: 1em;
-}
+
 #personalizacion-invitacion input[type="text"]{
     width: 100%;
 }
@@ -717,34 +733,105 @@ footer{
 .circulo-color{
     width: 40px;
     height: 40px;
-    background-color: #4267B2;
-    border-radius: 100%;
-    
+    background-color: blue;
+    border-radius: 100%; 
 }
+
+.opcion-color:nth-of-type(2) .circulo-color, .opcion-fondo:nth-of-type(2) .caja-fondo{
+    background-color: red;
+
+}
+.opcion-color:nth-of-type(3) .circulo-color, .opcion-fondo:nth-of-type(3) .caja-fondo{
+    background-color: green;
+
+}
+.opcion-color:nth-of-type(4) .circulo-color, .opcion-fondo:nth-of-type(4) .caja-fondo{
+    background-color: yellow;
+
+}
+.opcion-color:nth-of-type(5) .circulo-color, .opcion-fondo:nth-of-type(5) .caja-fondo{
+    background-color: violet;
+
+}
+.contenedor-tamanio-fuente{
+    align-items: baseline;
+}
+.opcion-tamanio-fuente:nth-of-type(2) p{
+    font-size: 17px;
+ 
+ }
+ .opcion-tamanio-fuente:nth-of-type(3) p{
+     font-size: 18px;
+  
+  }
+  .opcion-tamanio-fuente:nth-of-type(4) p{
+     font-size: 19px;
+  
+  }
+ .opcion-tamanio-fuente:nth-of-type(5) p{
+    font-size: 20px;
+ 
+ }
 
 .caja-ubicacion{
     width: 40px;
     height: 40px;
-    
-    background-color: #4267B2;
+    background-color: #FFF;
+    display: flex;
 }
+
+.caja-ubicacion-posicion{
+    width: 40%;
+    height: 20%;
+    background-color: green;
+}
+.opcion-ubicacion:nth-of-type(2) .caja-ubicacion{
+    justify-content: flex-end;
+}
+.opcion-ubicacion:nth-of-type(3) .caja-ubicacion{
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.opcion-ubicacion:nth-of-type(4) .caja-ubicacion{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
 
 .caja-fondo{
     width: 40px;
     height: 40px;
     
-    background-color: #4267B2;
+    background-color: blue;
 }
-#section-personalizacion h4{
-    margin-top: .4em;
-    margin-bottom: .2em;
-}
+
 #section-personalizacion input[type="radio"]{
     margin-top: .4em;
+}
+#section-personalizacion input[type="text"]{
+    padding: .5em;
+    
+}
+
+.contenedor-boton{
+    width: 100%;
+    margin: 0;
+    margin-top: 1em;
+}
+.contenedor-boton button{
+    width: 100%;
+    background: var(--color-button);
+    color: white;
+}
+.contenedor-boton button:hover{
+    background: var(--color-button-hover);
+    color: black;
 }
 
 
 /* RESPONSIVE */
+
+/* tablets o celulares horizontal */
 @media screen and (max-width: 47em){
     /* HEADER */
         #header{
@@ -775,20 +862,48 @@ footer{
     /* PREVISUALIZACION EVENTO */
     #section-personalizacion{
         flex-direction: column;
+        margin-right: 5%;
+        margin-left: 5%;
+
+    }
+    #section-personalizacion article{
+        /* margin: 0 auto; */
+        flex-basis: 18em;
         flex-shrink: 0;
-
-
-
-        width: 70%;
-
-
-        margin-right: auto;
-        margin-left: auto;
-
+        flex-grow: 0;
+    }
+    #personalizacion-invitacion h2{
+        text-align: center;
+    }
+    #section-personalizacion input[type="text"]{
+        text-align: center;
     }
 
     #previsualizacion-evento{
         order: 2;
     }
+    #personalizacion-invitacion{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .contenedor-boton,#section-personalizacion input[type="text"]{
+        width: 80%;
+
+    }
+}
+
+
+/* celulares */
+@media screen and (max-width: 36em){
+
+
+
+        /* PERSONALIZACION EVENTO */
+        .contenedor-boton,#section-personalizacion input[type="text"]{
+            width: 100%;
+    
+        }
 }
